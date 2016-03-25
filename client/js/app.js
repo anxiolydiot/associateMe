@@ -14,10 +14,9 @@ var associateMe = angular.module('associateMe',['ui.router'])
 });
     
 
-
   $locationProvider.html5Mode(true);
 
   }]);
 
-//you can specify base href 
+
 
