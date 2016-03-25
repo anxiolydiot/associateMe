@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
  
 
     <title>Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
 
  
 
@@ -73,13 +74,15 @@
     </div> <!-- /container -->
 
     <div class=  "container">
-    <div ng-view> </div>
+    <ui-view></ui-view>
     </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
   <script src="/jquery/dist/jquery.js"></script> 
-  <script src="/angular/angular.js"></script> 
-  <script src="/angular-route/angular-route.js"></script> 
+  <!--<script src="/angular/angular.js"></script> 
+  <script src="/angular-route/angular-route.js"></script> -->
   <script src="/app.js"></script>
   <script src="/homecontroller.js"></script>
   <script src="/navcontroller.js"></script>
