@@ -5,19 +5,10 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var logger = require('morgan');
-var handlebars = require('handlebars');
-var expressHandlebars = require('express-handlebars');
 var path = require('path');
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 mongoose.connect("mongodb://localhost/associateme");
-
-app.engine('handlebars', expressHandlebars({
-  defaultLayout: 'main'
-}));
-app.set('view engine','handlebars');
-
-
 
 app.all('*', function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
