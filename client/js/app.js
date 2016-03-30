@@ -11,6 +11,11 @@ var associateMe = angular.module('associateMe',['ui.router'])
     url: '/chatrooms',
     templateUrl: 'partials/chatroom.html',
     controller: 'chatroomcontroller'
+})
+  .state('profile', {
+    url: '/profile',
+    templateUrl: 'partials/profile.html',
+    controller: 'profilecontroller'
 });
     
 
